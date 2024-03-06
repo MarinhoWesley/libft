@@ -1,13 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wemarinh <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/06 09:15:03 by wemarinh          #+#    #+#             */
+/*   Updated: 2024/03/06 09:15:08 by wemarinh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 
 void	*memmove(void *dst, const void *src, size_t n)
 {
 	size_t	i;
 
-	i = 0;
-	while (i < n)
+	while (dst > n)
 	{
-		*dst = *src;
+		/* *dst = *src; */
 		i++;
 	}
 	return (dst);
@@ -22,5 +33,4 @@ int	main(void)
     memmove(destino, busca, 4);
     printf("%s", destino);
     
-    
-}SHA256:GVjSHW9AGx9r+tXxPy+2Eo+F49tlBbs2ycAICdxZPIM wesleymarinhofe23@gmail.com
+}
