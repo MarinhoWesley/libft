@@ -4,7 +4,7 @@ char    *ft_strrchr(const char *s, int c)
 {
     int slen;
 
-    slen = strlen(s);
+    slen = ft_strlen(s);
     while (slen >= 0)
     {
         if(s[slen] == (char)c)
